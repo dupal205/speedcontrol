@@ -1,0 +1,72 @@
+/*  Guest - Speedmeeter Script CSS By Before */
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Pretendard-Regular', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+body {
+    overflow: hidden;
+}
+
+.main {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.466);
+    min-width: 560px;
+    min-height: 130px;
+    border-radius: 2px;
+
+    transform: translateX(0);
+    opacity: 0;
+    display: none;
+    transition: transform 250ms, opacity 250ms;
+
+    zoom: 0.85;
+}
+
+.main.active {
+    opacity: 1;
+    transform: translateX(100px);
+}
+
+.main > .topbackground {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.651);
+    padding: 13px 10px;
+    width: 560px;
+    left: 50%;
+    margin-top: -3.7%;
+    border-radius: 3px 3px 0px 0px;
+
+    /* text-shadow: 0 0 2px white; */
+    transform: translate(-50%,-50%);
+    text-align: left;
+    /* border-radius: 2px; */
+    font-size: 15px;
+}
+
+.main > .speed-box {
+    position: absolute;
+    min-width: 100px;
+    margin-top: -10px;
+    left: 11%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.speed-box > .box {
+    white-space: nowrap;
+    text-align: left;
+    margin-top: -30px;
+    font-size: 13px;
+}

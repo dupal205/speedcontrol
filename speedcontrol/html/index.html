@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link rel="stylesheet" href="./index.css">
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="./domi_nuimanager.js"></script>
+    <script src="./index.js"></script>
+    <title>게스트 - 경찰 속도감지계</title>
+</head>
+<body>
+    <div class="main">
+        <div class="topbackground">&nbsp;&nbsp;<span style="color: rgb(238, 233, 233);">공무원 과속단속 시스템<span style="position: absolute; top: 7px; right: 15px; padding: 6px; background-color: rgba(0, 0, 0, 0.637); border-radius: 3px; color: rgb(226, 224, 224);">🔴REC</span>
+        </div>
+        <div class="speed-box">
+            <div class="box" style="color: rgb(211, 207, 207); ">
+                <span style="color:rgb(211, 207, 207); font-size: 16.5px;">전방 카메라
+                    <span style="color:rgb(230, 230, 230);"><span id="a_plate"
+                            style="position: absolute; color:rgb(0, 0, 0); top: -40px; left: 85px; border-radius: 3px; border: 4px double; padding: 5px; text-align: center; width: 150px; height: auto; background-color: white;">NONE</span></span>
+                    <span style="position: absolute; top: -39px; left: 260px; color: white; font-size: 13px; font-weight: bold;">속도 - <span id="a_speed">0</span> km/h&nbsp;&nbsp;<span id="a_maxspd" style="color: rgb(245, 106, 106); display: none;">단속 대상</span></span>
+                    <span style="position: absolute; color:rgb(211, 207, 207); font-size: 12px; left: 259px; top: -22px; font-weight: bold;">일반도로 +150km/h 위반, 고속도로 <span style="color: rgb(168, 50, 50);">제한없음</span></span>
+                    <br><br>
+                    <span style="position: absolute; color: rgb(211, 207, 207); font-size: 16.5px; top: 30px;">후방 카메라<span id="b_plate"
+                            style="position: absolute; color:rgb(0, 0, 0); top: -10px; left: 85px; border-radius: 3px; border: 4px double; padding: 5px; text-align: center; width: 150px; height: auto; background-color: white;">NONE</span>
+                        <span style="position: absolute; color:white; left: 260px; top: -8px; font-size: 13px; font-weight: bold;">속도 - <span id="b_speed"
+                                style="color:rgb(230, 230, 230); font-weight: bold;">0</span> km/h <span id="b_maxspd" style="color: rgb(245, 106, 106); display: none;">단속 대상</span></span></span><span
+                        style="position: absolute; font-size: 12px; color:rgb(211, 207, 207); left: 260px; top: 38px;"> 일반도로 150km/h
+                        위반,고속도로 <span style="color: rgb(168, 50, 50);">제한없음</span></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,3 @@
+config = {
+    ["permission"] = "police.basic"
+}
